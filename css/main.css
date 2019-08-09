@@ -469,10 +469,10 @@ button:focus {
     height: 100%;
     top: 0px;
     left: 0px;
-    background: #5533ff;
-    background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%);
-    -webkit-transform: skewY(-12deg);
-    transform: skewY(-12deg);
+    background: url(../img/sara/patrick-tomasso-fMntI8HAAB8-unsplash.jpg);
+    background-size: 100%;
+    /* background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%); */
+    transform: skewY(8deg) translate(0,-31%);
     -webkit-transform-origin: 0;
     transform-origin: 0;
     z-index: -12; }
@@ -483,15 +483,15 @@ button:focus {
       left: 16.66666%;
       left: calc(calc(100% / 3) / 2);
       right: auto;
-      background: #5533ff;
-      background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%);
+      /* background: #5533ff;
+      background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%); */
       height: 200px; }
     .hero-area .overlay :nth-child(2) {
       width: 33.33333%;
       width: calc(100% /3);
       bottom: 0;
-      background: #5533ff;
-      background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%);
+      /* background: #5533ff;
+      background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%); */
       position: absolute;
       height: 155px;
       left: 3%; }
