@@ -1472,3 +1472,17 @@ button:focus {
       -webkit-transition: all 300ms;
       -o-transition: all 300ms;
       transition: all 300ms; }
+.ni-brush{
+  width: 100%;
+}
+
+.fa.fa-square{
+  color: #0088cc;
+}
+.bg-1{
+  background: url(../img/sara/hotel_room_productive.jpg) !important;
+  background-color: rgba(0,0,0,0.5);
+}
+.section-icon{
+  width: 100%;
+}
