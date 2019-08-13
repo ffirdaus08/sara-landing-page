@@ -406,7 +406,7 @@ button:focus {
 
 .navbar-expand-md .navbar-nav .nav-link {
   color: #fff;
-  font-size: 16px;
+  font-size: 15px;
   padding: 8px 0px;
   margin-left: 26px;
   font-family: 'Sofia-Pro', sans-serif;
@@ -532,6 +532,13 @@ button:focus {
       display: block;
       height: auto;
       max-width: 100%; }
+
+  .near-img{
+    margin: -38px 0 0 80px;
+  }
+.myButton1{
+  width: 150px;
+}
 
 /* ==========================================================================
    About 
@@ -1299,7 +1306,7 @@ button:focus {
 #blog-single .blog-comment .comment-author {
   margin-bottom: 10px; }
 
-#blog-single .blog-comment .meta {
+#blog-single .blog-comment {
   margin-bottom: 10px;
   color: #999; }
 
