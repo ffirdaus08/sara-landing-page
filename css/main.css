@@ -80,7 +80,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
    Section Title
    ========================================================================== */
 .section {
-  padding: 130px 0px; }
+  padding: 20px 0px; }
 
 .form-control:focus {
   outline: none;
@@ -604,8 +604,8 @@ button:focus {
 /* ==========================================================================
    Features 
    ========================================================================== */
-#features {
-  background: #f9f9f9; }
+/* #features {
+  background: #f9f9f9; } */
   #features .featured-bg {
     background: #fff; }
   #features .featured-border1 {
@@ -764,8 +764,8 @@ button:focus {
 /* ==========================================================================
    Showcase 
    ========================================================================== */
-#showcase {
-  padding-bottom: 375px; }
+/* #showcase {
+  padding-bottom: 375px; } */
   #showcase .right-position {
     position: relative; }
   #showcase .showcase-area {
@@ -1408,7 +1408,7 @@ button:focus {
    Footer section
    ========================================================================== */
 #footer-Content {
-  padding-top: 130px;
+  /* padding-top: 130px; */
   background: #180e29; }
   #footer-Content .footer-logo img {
     padding-top: 70px; }
@@ -1417,7 +1417,7 @@ button:focus {
     box-shadow: none;
     background: #e5fff3; }
   #footer-Content .copyright {
-    margin-top: 125px;
+    /* margin-top: 125px; */
     border-top: 1px solid #3c1f6e;
     padding-top: 30px;
     padding-bottom: 30px; }
@@ -1480,9 +1480,20 @@ button:focus {
   color: #0088cc;
 }
 .bg-1{
-  background: url(../img/sara/hotel_room_productive.jpg) !important;
-  background-color: rgba(0,0,0,0.5);
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.50), 
+    rgba(0, 0, 0, 0.50)
+  ), url(../img/sara/hotel_room_productive.jpg) center;
+  background-size: cover;
+}
+.bg-2{
+  background: url(../img/sara/cytonn-photography-n95VMLxqM2I-unsplash.jpg) center;
+  padding: 119px 0px 80px 0px;
+  background-size: cover; 
 }
 .section-icon{
-  width: 100%;
+  width: 30%;
+}
+.section-icon2{
+  width: 15%;
 }
