@@ -54,10 +54,24 @@
     $(window).on('scroll', function() {
         if ($(window).scrollTop() > 100) {
             $('.header-top-area').addClass('menu-bg');
+            $('.navbar .tes img').attr('src','./img/Icon/Iconse-04.png');
         } else {
             $('.header-top-area').removeClass('menu-bg');
+            $('.navbar .tes img').attr('src','./img/Icon/Icons-03-Recovered.png');
         }
     });
+
+    
+$(function () { 
+  $(window).scroll(function () {
+      if ($(this).scrollTop() > 1000) { 
+          $('.navbar .navbar-expand-md img').attr('src','./img/Icon/Icons-03-Recovered.png');
+      }
+      if ($(this).scrollTop() < 1000) { 
+          $('.navbar .navbar-expand-md img').attr('src','./img/Icon/Icons-04.png');
+      }
+  })
+});
 
   /* 
  VIDEO POP-UP

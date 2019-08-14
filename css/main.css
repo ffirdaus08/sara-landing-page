@@ -20,7 +20,7 @@ Domain Path:      /languages/
    GENERAL
    ========================================================================== */
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Sofia-Ultralight', sans-serif;
   color: #a0a6ad;
   font-size: 14px;
   font-weight: 400;
@@ -31,9 +31,9 @@ html {
   overflow-x: hidden; }
 
 p {
-  font-size: 14px;
-  color: #5e629c;
-  line-height: 26px;
+  font-size: 17px;
+  color: black;
+  line-height: 28px;
   margin-bottom: 0; }
 
 a:hover, a:focus {
@@ -46,11 +46,24 @@ a {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Poppins', sans-serif;
+h1, h3, h5 {
+  font-family: 'Sofia-Pro', sans-serif;
   font-size: 40px;
   font-weight: 400;
-  color: #151948; }
+  color: white; }
+
+  h2{
+  font-family: 'Sofia-Pro', sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  color: #0088cc;
+  }
+  h4{
+  font-family: 'Sofia-Pro', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: black;
+  }
 
 ul {
   margin: 0;
@@ -104,6 +117,10 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   color: #5e629c;
   line-height: 26px;
   margin-bottom: 0; }
+.section-title{
+  padding: 10px 0 0 0;
+  font-size: 22px;
+}
 
 /* ==========================================================================
    Buttons
@@ -150,9 +167,9 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   border-width: 1px;
   cursor: pointer;
   background-color: transparent;
-  border-color: #3ecf8e;
-  color: #3ecf8e;
-  width: 160px;
+  border-color: white;
+  color: white;
+  width: 240px;
   height: 50px;
   padding: 14px 15px; }
 
@@ -162,8 +179,8 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 
 .btn-border-filled {
   cursor: pointer;
-  background-color: #3ecf8e;
-  border: 1px solid #3ecf8e;
+  background-color: #0088cc;
+  border: 1px solid #0088cc;
   color: #fff;
   box-shadow: 0px 8px 9px 0px rgba(96, 94, 94, 0.17);
   width: 180px;
@@ -171,9 +188,9 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   padding: 15px 15px; }
 
 .btn-border-filled:hover {
-  color: #fff;
+  color: #0088cc;
   background-color: transparent;
-  border-color: #fff;
+  border-color: #0088cc;
   transform: translateY(-2px); }
 
 .btn-lg {
@@ -377,8 +394,8 @@ button:focus {
   width: 50%;
 } */
 .menu-bg {
-  background: #5533ff;
-  background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%) !important;
+  background: #f1f2f2;
+  /* background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%) !important; */
   box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.1);
   z-index: 9999;
   padding: 5px;
@@ -396,20 +413,20 @@ button:focus {
   color: #3c9cfd; }
 
 .menu-bg .navbar-nav .nav-link {
-  color: #ffffff !important; }
+  color: black !important; }
 
 .menu-bg .navbar-nav .nav-link:hover {
-  color: #ffffff !important; }
+  color: black !important; }
 
 .menu-bg .navbar-nav .active {
-  color: #ffffff !important; }
+  color: black !important; }
 
 .navbar-expand-md .navbar-nav .nav-link {
   color: #fff;
   font-size: 15px;
   padding: 8px 0px;
   margin-left: 26px;
-  font-family: 'Sofia-Pro', sans-serif;
+  font-family: 'Sofia-Ultralight', sans-serif;
   position: relative;
   font-weight: 500; }
 
@@ -469,7 +486,11 @@ button:focus {
     height: 100%;
     top: 0px;
     left: 0px;
-    background: url(../img/sara/patrick-tomasso-fMntI8HAAB8-unsplash.jpg);
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.50), 
+      rgba(0, 0, 0, 0.50)
+    ),url(../img/sara/patrick-tomasso-fMntI8HAAB8-unsplash.jpg);
     background-size: 100%;
     /* background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%); */
     transform: skewY(8deg) translate(0,-31%);
@@ -587,7 +608,7 @@ button:focus {
    business-plan Section 
    ========================================================================== */
 #business-plan {
-  padding-bottom: 130px; }
+  background: #f1f2f2; }
   #business-plan .container-fluid {
     padding-right: 30px;
     padding-left: 30px; }
@@ -1409,7 +1430,7 @@ button:focus {
    ========================================================================== */
 #footer-Content {
   /* padding-top: 130px; */
-  background: #180e29; }
+  background: white; }
   #footer-Content .footer-logo img {
     padding-top: 70px; }
   #footer-Content .form-control:focus {
@@ -1496,4 +1517,13 @@ button:focus {
 }
 .section-icon2{
   width: 15%;
+}
+.to-right{
+  display: flex;
+}
+.icon{
+  margin: 15px 0 15px 0;
+}
+.iconn{
+  margin: 90px 0 15px 0;
 }
