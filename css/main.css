@@ -1527,3 +1527,9 @@ button:focus {
 .iconn{
   margin: 90px 0 15px 0;
 }
+.white-text{
+  color: white;
+}
+.smaller{
+  font-size: 22px;
+}
