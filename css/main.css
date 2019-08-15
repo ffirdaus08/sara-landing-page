@@ -60,9 +60,10 @@ h1, h3, h5 {
   }
   h4{
   font-family: 'Sofia-Pro', sans-serif;
-  font-size: 40px;
+  font-size: 24px;
   font-weight: 400;
   color: black;
+  line-height: 55px;
   }
 
 ul {
@@ -81,7 +82,7 @@ a:not([href]):not([tabindex]) {
   color: #fff; }
 
 a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
-  color: #fff; }
+  color: #0088cc; }
 
 .bg-transparent {
   background: transparent !important; }
@@ -106,9 +107,9 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   position: relative; }
 
 .section-header .section-title {
-  font-size: 35px;
+  font-size: 30px;
   margin-bottom: 12px;
-  font-weight: 600;
+  font-weight: 100;
   position: relative;
   line-height: 30px; }
 
@@ -1440,10 +1441,11 @@ button:focus {
   #footer-Content .copyright {
     /* margin-top: 125px; */
     border-top: 1px solid #3c1f6e;
-    padding-top: 30px;
-    padding-bottom: 30px; }
+    /* padding-top: 30px;
+    padding-bottom: 30px; */
+   }
     #footer-Content .copyright p {
-      color: #3ecf8e;
+      color: black;
       font-size: 18px; }
     #footer-Content .copyright a {
       color: #ddd; }
@@ -1502,8 +1504,8 @@ button:focus {
 }
 .bg-1{
   background: linear-gradient(
-    rgba(0, 0, 0, 0.50), 
-    rgba(0, 0, 0, 0.50)
+    rgba(0, 0, 0, 0.40), 
+    rgba(0, 0, 0, 0.40)
   ), url(../img/sara/hotel_room_productive.jpg) center;
   background-size: cover;
 }
@@ -1532,4 +1534,14 @@ button:focus {
 }
 .smaller{
   font-size: 22px;
+}
+.re-center{
+  padding: 0px 0 0 65px;
+}
+.re-center2{
+  padding: 0px 0 0 260px;
+}
+#underline-gap {
+  text-decoration: underline;
+  text-underline-position: under;
 }

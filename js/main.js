@@ -128,6 +128,12 @@ $(function () {
 
     });
 
+    $(document).ready(function(){
+      $(".btn").click(function(){
+        $("#business-plan").toggle(400,"swing");
+      });
+    });
+
   /* Auto Close Responsive Navbar on Click
   ========================================================*/
   function close_toggle() {
