@@ -128,12 +128,16 @@ $(function () {
 
     });
 
-    $(document).ready(function(){
-      $(".btn").click(function(){
-        $("#business-plan").toggle(400,"swing");
-      });
-    });
+    // $(document).ready(function(){
+    //   $(".btn").click(function(){
+    //     $("#business-plan").toggle(400,"swing");
+    //   });
+    // });
 
+    $('#toggle').click(function() {
+      $('#business-plan').toggle('1000');
+      $("i", this).toggleClass("lni-chevron-up lni-chevron-down");
+  });
   /* Auto Close Responsive Navbar on Click
   ========================================================*/
   function close_toggle() {

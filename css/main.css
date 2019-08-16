@@ -48,7 +48,7 @@ a {
 
 h1, h3, h5 {
   font-family: 'Sofia-Pro', sans-serif;
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 400;
   color: white; }
 
@@ -109,9 +109,9 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 .section-header .section-title {
   font-size: 30px;
   margin-bottom: 12px;
-  font-weight: 100;
+  font-weight: lighter;
   position: relative;
-  line-height: 30px; }
+  line-height: 50px; }
 
 .section-header .desc-text p {
   font-size: 18px;
@@ -121,6 +121,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 .section-title{
   padding: 10px 0 0 0;
   font-size: 22px;
+  line-height: 80px;
 }
 
 /* ==========================================================================
@@ -130,7 +131,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   font-size: 14px;
   padding: 10px 30px;
   border-radius: 4px;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Sofia-Ultralight', sans-serif;
   letter-spacing: 1px;
   font-weight: 500;
   color: #fff;
@@ -184,7 +185,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   border: 1px solid #0088cc;
   color: #fff;
   box-shadow: 0px 8px 9px 0px rgba(96, 94, 94, 0.17);
-  width: 180px;
+  width: 200px;
   height: 50px;
   padding: 15px 15px; }
 
@@ -1533,7 +1534,7 @@ button:focus {
   color: white;
 }
 .smaller{
-  font-size: 22px;
+  font-size: 18px;
 }
 .re-center{
   padding: 0px 0 0 65px;
@@ -1544,4 +1545,8 @@ button:focus {
 #underline-gap {
   text-decoration: underline;
   text-underline-position: under;
+}
+.cl-blue{
+  color: #0088cc;
+  font-family: 'Sofia-Pro', sans-serif;
 }
