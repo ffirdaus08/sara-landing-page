@@ -33,7 +33,7 @@ html {
 p {
   font-size: 17px;
   color: black;
-  line-height: 28px;
+  line-height: 20px;
   margin-bottom: 0; }
 
 a:hover, a:focus {
@@ -61,9 +61,9 @@ h1, h3, h5 {
   h4{
   font-family: 'Sofia-Pro', sans-serif;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 900;
   color: black;
-  line-height: 55px;
+  line-height: 90px;
   }
 
 ul {
@@ -94,7 +94,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
    Section Title
    ========================================================================== */
 .section {
-  padding: 20px 0px; }
+  padding: 40px 0px; }
 
 .form-control:focus {
   outline: none;
@@ -107,11 +107,19 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   position: relative; }
 
 .section-header .section-title {
-  font-size: 30px;
+  font-size: 26px;
   margin-bottom: 12px;
   font-weight: lighter;
   position: relative;
   line-height: 50px; }
+
+  .section-header .section-title::after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 35%; /* Change this to whatever width you want. */
+    padding-top: 0px; /* This creates some space between the element and the border. */
+    border-bottom: 2px solid white; /* This creates the border. Replace black with whatever color you want. */ }
 
 .section-header .desc-text p {
   font-size: 18px;
@@ -122,6 +130,8 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   padding: 10px 0 0 0;
   font-size: 22px;
   line-height: 80px;
+  font-weight: 700;
+  letter-spacing: 3px;
 }
 
 /* ==========================================================================
@@ -187,7 +197,8 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   box-shadow: 0px 8px 9px 0px rgba(96, 94, 94, 0.17);
   width: 200px;
   height: 50px;
-  padding: 15px 15px; }
+  padding: 15px 15px; 
+  margin: 0 0 20px 0;}
 
 .btn-border-filled:hover {
   color: #0088cc;
@@ -373,8 +384,7 @@ button:focus {
   cursor: pointer;
   text-align: center;
   border-radius: 4px;
-  background: #5533ff;
-  background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%);
+  background: #0088cc;
   box-shadow: 0px 8px 9px 0px rgba(96, 94, 94, 0.17);
   z-index: 9999999; }
 
@@ -392,9 +402,9 @@ button:focus {
 .logo-menu a {
   font-size: 20px;
   color: #fff; }
-/* .resize-logo{
-  width: 50%;
-} */
+.resize-logo{
+  width: 75%;
+}
 .menu-bg {
   background: #f1f2f2;
   /* background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%) !important; */
@@ -519,7 +529,7 @@ button:focus {
       height: 155px;
       left: 3%; }
   .hero-area .contents {
-    padding: 220px 0; }
+    padding: 180px 0; }
     .hero-area .contents h2 {
       color: #fff;
       font-size: 38px;
@@ -529,7 +539,8 @@ button:focus {
     .hero-area .contents p {
       color: #fff;
       font-size: 18px;
-      line-height: 26px; }
+      line-height: 26px; 
+      padding: 35px 0 0 0;}
     .hero-area .contents .btn {
       margin-top: 40px;
       margin-right: 20px;
@@ -1441,13 +1452,13 @@ button:focus {
     background: #e5fff3; }
   #footer-Content .copyright {
     /* margin-top: 125px; */
-    border-top: 1px solid #3c1f6e;
+    /* border-top: 1px solid #3c1f6e; */
     /* padding-top: 30px;
     padding-bottom: 30px; */
    }
     #footer-Content .copyright p {
       color: black;
-      font-size: 18px; }
+      font-size: 10px; }
     #footer-Content .copyright a {
       color: #ddd; }
   #footer-Content .widget p {
@@ -1525,7 +1536,8 @@ button:focus {
   display: flex;
 }
 .icon{
-  margin: 15px 0 15px 0;
+  margin: 10px 0 15px 0;
+  letter-spacing: 0ch;
 }
 .iconn{
   margin: 90px 0 15px 0;
@@ -1549,4 +1561,23 @@ button:focus {
 .cl-blue{
   color: #0088cc;
   font-family: 'Sofia-Pro', sans-serif;
+}
+.blue{
+  color: #0088cc;
+  font-family: 'Sofia-Pro', sans-serif;
+}
+.more-down{
+  padding: 60px 0 0 25px;
+}
+.more-left{
+  padding: 60px 0 0 0;
+}
+.bolde{
+  font-weight: 900;
+}
+.more-size{
+  font-size: 15px;
+}
+.pl-7{
+  padding-left: 3.5rem !important;
 }

@@ -54,7 +54,7 @@
     $(window).on('scroll', function() {
         if ($(window).scrollTop() > 100) {
             $('.header-top-area').addClass('menu-bg');
-            $('.navbar .tes img').attr('src','./img/Icon/Iconse-04.png');
+            $('.navbar .tes img').attr('src','./img/Icon/Icons-04bb.png');
         } else {
             $('.header-top-area').removeClass('menu-bg');
             $('.navbar .tes img').attr('src','./img/Icon/Icons-03-Recovered.png');
