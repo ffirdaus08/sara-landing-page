@@ -502,7 +502,7 @@ button:focus {
     linear-gradient(
       rgba(0, 0, 0, 0.50), 
       rgba(0, 0, 0, 0.50)
-    ),url(../img/sara/patrick-tomasso-fMntI8HAAB8-unsplash.jpg);
+    ),url(../img/sara/patrick-tomasso-fMntI8HAAB8-unsplash1.jpg);
     background-size: 100%;
     /* background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%); */
     transform: skewY(8deg) translate(0,-31%);
@@ -1522,7 +1522,7 @@ button:focus {
   background-size: cover;
 }
 .bg-2{
-  background: url(../img/sara/cytonn-photography-n95VMLxqM2I-unsplash.jpg) center;
+  background: url(../img/sara/cytonn-photography-n95VMLxqM2I-unsplash12.jpg) center;
   padding: 119px 0px 80px 0px;
   background-size: cover; 
 }

@@ -52,26 +52,39 @@
    Sticky Nav
    ========================================================================== */
     $(window).on('scroll', function() {
-        if ($(window).scrollTop() > 100) {
+        var mobile = window.matchMedia("(max-width: 480px)")
+        if ($(window).scrollTop() > 100 && !mobile.matches) {
+            console.log("kkkkk")
             $('.header-top-area').addClass('menu-bg');
+            $('.fixed-top').addClass('menu-bg');
             $('.navbar .tes img').attr('src','./img/Icon/Icons-04bb.png');
         } else {
+            console.log("clclcl")
+            $('.fixed-top').removeClass('menu-bg');
             $('.header-top-area').removeClass('menu-bg');
             $('.navbar .tes img').attr('src','./img/Icon/Icons-03-Recovered.png');
         }
     });
 
+    $(window).on('load', function() {
+      $('body').scrollspy({
+          target: '.navbar-collapse',
+          offset: 195
+      });
+   });
+
+
     
-$(function () { 
-  $(window).scroll(function () {
-      if ($(this).scrollTop() > 1000) { 
-          $('.navbar .navbar-expand-md img').attr('src','./img/Icon/Icons-03-Recovered.png');
-      }
-      if ($(this).scrollTop() < 1000) { 
-          $('.navbar .navbar-expand-md img').attr('src','./img/Icon/Icons-04.png');
-      }
-  })
-});
+// $(function () { 
+//   $(window).scroll(function () {
+//       if ($(this).scrollTop() > 1000) { 
+//           $('.navbar .navbar-expand-md img').attr('src','./img/Icon/Icons-03-Recovered.png');
+//       }
+//       if ($(this).scrollTop() < 1000) { 
+//           $('.navbar .navbar-expand-md img').attr('src','./img/Icon/Icons-04.png');
+//       }
+//   })
+// });
 
   /* 
  VIDEO POP-UP
@@ -111,22 +124,6 @@ $(function () {
    ========================================================================== */
 
 
-    $(window).on('load', function() {
-       
-        $('body').scrollspy({
-            target: '.navbar-collapse',
-            offset: 195
-        });
-
-        $(window).on('scroll', function() {
-            if ($(window).scrollTop() > 100) {
-                $('.fixed-top').addClass('menu-bg');
-            } else {
-                $('.fixed-top').removeClass('menu-bg');
-            }
-        });
-
-    });
 
     // $(document).ready(function(){
     //   $(".btn").click(function(){

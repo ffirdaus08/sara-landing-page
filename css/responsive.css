@@ -157,16 +157,29 @@
     background: #191c1e; }
   .navbar-expand-md .navbar-brand, .navbar-expand-md .navbar-toggler {
     margin: 6px 15px; }
-  .bg-inverse {
-    background: #191c1e; }
+
+    
+    */
   .navbar {
     padding: 0; }
   .navbar-brand img {
     width: 100px; } }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  .bg-inverse {
-    background: #191c1e; }
+  .to-right{
+    display: none;
+  }
+  .to-right1{
+    display: flex;
+  }
+  .section-icon2 {
+    width: 25%;
+  }
+  .resize-logo {
+    width: 80%;
+    padding: 0 0 0 100px;}
+  /* .bg-inverse {
+    background: #f1f2f2; } */
   .navbar {
     padding: 0; }
   .navbar-brand img {
@@ -184,7 +197,7 @@
     line-height: 35px;
     margin-bottom: 10px; }
   .hero-area .contents {
-    padding: 200px 0 50px; }
+    padding: 0 0 0 0 ; }
   .hero-area .contents p {
     color: #fff;
     font-size: 14px;
@@ -193,10 +206,13 @@
     margin-top: 30px;
     margin-right: 4px;
     text-transform: uppercase;
-    width: 125px;
+    width: 150px;
     height: 45px;
     padding: 15px 14px;
     font-size: 12px; }
+    .re-center2 {
+      padding: 0px 0 0 62px;
+  }
   .hero-area .contents .btn-border {
     border: 1px solid #fff;
     color: #fff;
@@ -236,7 +252,7 @@
   .showcase-area .pr-0, .px-0 {
     padding-right: 15px !important; }
   #showcase {
-    padding-bottom: 250px; }
+    padding-bottom: unset; }
   #pricing .pricing-table h1 span {
     left: 4%; }
   #pricing .pricing-table {
@@ -292,8 +308,8 @@
   #footer-Content .footer-logo img {
     padding-top: 0; }
   #footer-Content {
-    padding-top: 30px;
-    background: #180e29; }
+    padding-top: unset;
+    background: unset; }
   #footer-Content .footer-logo img {
     padding-top: 0;
     width: 40%; }
@@ -359,7 +375,13 @@
     margin-bottom: 18px;
     margin-top: 15px; }
   .back-to-top {
-    display: none !important; } }
+    display: none !important; } 
+  .hero-area .intro-img img {
+    display: none; } 
+  .hero-area .overlay {
+    transform: none;
+    background-size: 140%;
+  }}
 
 @media (min-width: 375px) and (max-width: 667px) {
   #showcase .showcase-slider .screenshot-thumb > .hover-content {
@@ -380,6 +402,9 @@
     left: 20%; } }
 
 @media only screen and (min-width: 992px) and (max-width: 1280px) {
+  #button-for-mobile{
+    display: none
+  }
   .navbar-expand-md .navbar-nav .nav-link {
     font-size: 15px;
     padding: 8px 0px;
@@ -438,3 +463,18 @@
     color: #5e629c;
     font-style: italic;
     line-height: 33px; } }
+    @media only screen and (min-width: 1280px) and (max-width: 1920px) {
+      #button-for-mobile{
+        display: none
+      }
+    }
+    @media only screen and (max-width: 420px) {
+      .resize-logo {
+        width: 80%;
+        padding: 0 0 0 130px;}
+    }
+    @media only screen and (max-width: 380px) {
+      .resize-logo {
+        width: 80%;
+        padding: 0 0 0 100px;}
+    }
